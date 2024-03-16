@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praktikum PAW</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+  <div class="container">
+    <div class="login">
+      <!-- Membuat form login -->
+      <form action="">
+        <h1>Login</h1>
+        <label for="Username">Username</label>
+        <input type="text" placeholder="Username">
+        <label for="password">password</label>
+        <input type="password" placeholder="password">
+        <button type="button" onclick="login()">Login</button>
+        <p>
+          <a href="#">Forgot Password</a>
+        </p>
+      </form>
+    </div>
+    <div class="right">
+      <img src="assets/catatan-aesthetic.width-800.format-webp.webp" class="img"/>
+      <p class="date" id="Date"></p>
+      <!-- Membuat paragraf -->
+      <h2>Praktikum PDW 2024</h2>
+      <p class="paraf">
+        CSS merupakan singkatan dari Cascading Style Sheets. Ini adalah bahasa yang digunakan untuk mengendalikan tampilan dan format dari elemen-elemen HTML di halaman web. Dengan menggunakan CSS, Anda dapat mengubah warna, ukuran, jenis huruf, letak, dan banyak aspek lain dari elemen-elemen HTML.</p>
+      <script>
+        let tanggal = new Date();
+        document.getElementById("Date").innerHTML = tanggal;
+      </script>
+    </div>
+  </div>
+</body>
+</html>
